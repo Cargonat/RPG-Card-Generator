@@ -1,3 +1,10 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Generator {
 
     private static GeneratorUI _ui;
@@ -5,8 +12,18 @@ public class Generator {
     private static void run()
     {
         _ui = new GeneratorUI();
-    }
 
+        _ui.getOutputJSONButton().addActionListener
+                (
+                        ae -> {
+                            String json = _ui.getJSONString();
+                            StringSelection selection = new StringSelection(json);
+                            Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                            clipboard.setContents(selection, selection);
+                            JOptionPane.showMessageDialog(null, json, "RPG Cards Generator",JOptionPane.PLAIN_MESSAGE);
+                        }
+                );
+    }
 
 
 
