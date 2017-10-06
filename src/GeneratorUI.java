@@ -27,7 +27,7 @@ public class GeneratorUI extends JFrame
     private JSpinner burrowSpinner;
 
     //JSON Button Getter for ActionListener in Generator.java
-    public JButton getOutputJSONButton()
+    JButton getOutputJSONButton()
     {
         return outputJSONButton;
     }
@@ -110,20 +110,13 @@ public class GeneratorUI extends JFrame
     private JCheckBox hoverCheckBox;
 
     //Constructor
-    public GeneratorUI()
+    GeneratorUI()
     {
         super("RPG Cards Generator");
 
         setContentPane(rootPanel);
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        try
-        {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception ignored)
-        {
-        }
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         setup();
         pack();
@@ -160,7 +153,7 @@ public class GeneratorUI extends JFrame
     }
 
     //generates JSON String
-    public String getJSONString()
+    String getJSONString()
     {
         //String start
         String json = "";
@@ -190,7 +183,7 @@ public class GeneratorUI extends JFrame
 
         //Hit Dice
         double[] dieAvarageArray = {2.5, 3.5, 4.5, 5.5, 6.5, 10.5};
-        double dieAvarage = dieAvarageArray[(Integer) hitDieComboBox.getSelectedIndex()];
+        double dieAvarage = dieAvarageArray[hitDieComboBox.getSelectedIndex()];
         int dieCount = (int) hitDieCountSpinner.getValue();
         int bonusHP = (int) hpBonusSpinner.getValue();
         int averageHP = (int) Math.floor(dieCount * dieAvarage + bonusHP);
@@ -428,7 +421,7 @@ public class GeneratorUI extends JFrame
         //Traits
         if (!traitsTextArea.getText().isEmpty())
         {
-            String traitLines[] = traitsTextArea.getText().split("\\r?\\n      ");
+            String traitLines[] = traitsTextArea.getText().split("\\r?\\n");
             for (String traitString : traitLines)
             {
                 if (!traitString.isEmpty())
@@ -440,7 +433,7 @@ public class GeneratorUI extends JFrame
         if(!actionsTextArea.getText().isEmpty())
         {
             json += "\"section | Actions\",\n      ";
-            String actionLines[] = actionsTextArea.getText().split("\\r?\\n      ");
+            String actionLines[] = actionsTextArea.getText().split("\\r?\\n");
             for (String actionString : actionLines)
             {
                 if (!actionString.isEmpty())
@@ -452,7 +445,7 @@ public class GeneratorUI extends JFrame
         if(!reactionsTextArea.getText().isEmpty())
         {
             json += "\"section | Reactions\",\n      ";
-            String reactionLines[] = reactionsTextArea.getText().split("\\r?\\n      ");
+            String reactionLines[] = reactionsTextArea.getText().split("\\r?\\n");
             for (String reactionString : reactionLines)
             {
                 if (!reactionString.isEmpty())
