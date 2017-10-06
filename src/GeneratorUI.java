@@ -62,7 +62,7 @@ public class GeneratorUI extends JFrame
     private JCheckBox deafenedCheckBox;
     private JCheckBox invisibleCheckBox;
     private JCheckBox restrainedCheckBox;
-    private JCheckBox exhaustedCheckBox1;
+    private JCheckBox exhaustedCheckBox;
     private JCheckBox paralysedCheckBox;
     private JCheckBox stunnedCheckBox;
     private JCheckBox frightenedCheckBox;
@@ -107,6 +107,7 @@ public class GeneratorUI extends JFrame
     private JCheckBox immuLightningCheckBox;
     private JCheckBox immuThunderCheckBox;
     private JTextField armorClassTextField;
+    private JCheckBox hoverCheckBox;
 
     //Constructor
     public GeneratorUI()
@@ -164,28 +165,28 @@ public class GeneratorUI extends JFrame
         //String start
         String json = "";
         json += "[\n" +
-                "{\n" +
-                "\"count\": 1,\n" +
-                "\"color\": \"Maroon\",\n";
+                "  {\n" +
+                "    \"count\": 1,\n" +
+                "    \"color\": \"Maroon\",\n";
 
         //Name
-        json += "\"title\": \"" + nameTextField.getText() + "\",\n";
+        json += "    \"title\": \"" + nameTextField.getText() + "\",\n";
 
         //Icon and Content Start
-        json += "\"icon\": \"imp-laugh\",\n" +
-                "\"contents\": [\n";
+        json += "    \"icon\": \"imp-laugh\",\n" +
+                "    \"contents\": [\n";
 
         //subtitle
-        json += "\"subtitle | " + sizeComboBox.getSelectedItem() + " " + typeTextField.getText()
-                                                                                      .toLowerCase() + ", " + alignmentComboBox
-                        .getSelectedItem() + "\",\n";
-        json += "\"\",\n\"rule\",\n";
+        json += "      \"subtitle | " + sizeComboBox.getSelectedItem() + " "
+                + typeTextField.getText().toLowerCase() + ", "
+                + alignmentComboBox.getSelectedItem() + "\",\n      ";
+        json += "\"rule\",\n      ";
 
         //Armor Class
         json += "\"property | Armor class | " + armorClassSpinner.getValue().toString();
         if (!armorClassTextField.getText().isEmpty())
             json += " (" + armorClassTextField.getText() + ")";
-        json += "\",\n";
+        json += "\",\n      ";
 
         //Hit Dice
         double[] dieAvarageArray = {2.5, 3.5, 4.5, 5.5, 6.5, 10.5};
@@ -194,21 +195,26 @@ public class GeneratorUI extends JFrame
         int bonusHP = (int) hpBonusSpinner.getValue();
         int averageHP = (int) Math.floor(dieCount * dieAvarage + bonusHP);
 
-        json += "\"property | Hit points | " + averageHP + " (" + dieCount + hitDieComboBox.getSelectedItem()
-                                                                                           .toString() + " + " + bonusHP + ")\",\n";
+        json += "\"property | Hit points | " + averageHP + " ("
+                + dieCount + hitDieComboBox.getSelectedItem().toString();
+        if (bonusHP != 0)
+            json += " + " + bonusHP;
+        json += ")\",\n      ";
 
         //Speed
         json += "\"property | Speed | " + walkSpinner.getValue() + " ft.";
         //optional non-walking speeds
         if (((int) flySpinner.getValue()) != 0)
             json += ", fly " + flySpinner.getValue() + " ft.";
+        if (hoverCheckBox.isSelected())
+            json += " (hover)";
         if (((int) swimSpinner.getValue()) != 0)
             json += ", swim " + swimSpinner.getValue() + " ft.";
         if (((int) climbSpinner.getValue()) != 0)
             json += ", climb " + climbSpinner.getValue() + " ft.";
         if (((int) burrowSpinner.getValue()) != 0)
             json += ", burrow " + burrowSpinner.getValue() + " ft.";
-        json += "\",\n\"\",\n\"rule\",\n";
+        json += "\",\n      \"rule\",\n      ";
 
         //Ability Scores
         json += "\"dndstats | "
@@ -218,9 +224,32 @@ public class GeneratorUI extends JFrame
                 + INTSpinner.getValue() + " | "
                 + WISSpinner.getValue() + " | "
                 + CHASpinner.getValue()
-                + "\",\n\"\",\n\"rule\",\n";
+                + "\",\n      \"rule\",\n      ";
 
         //Properties
+        //Saving Throws
+        String saveString = "";
+        if (((int) saveSTRSpinner.getValue()) != 0)
+            saveString += "Str +" + saveSTRSpinner.getValue() + ", ";
+        if (((int) saveDEXSpinner.getValue()) != 0)
+            saveString += "Dex +" + saveDEXSpinner.getValue() + ", ";
+        if (((int) saveCONSpinner.getValue()) != 0)
+            saveString += "Con +" + saveCONSpinner.getValue() + ", ";
+        if (((int) saveINTSpinner.getValue()) != 0)
+            saveString += "Int +" + saveINTSpinner.getValue() + ", ";
+        if (((int) saveWISSpinner.getValue()) != 0)
+            saveString += "Wis +" + saveWISSpinner.getValue() + ", ";
+        if (((int) saveCHASpinner.getValue()) != 0)
+            saveString += "Cha +" + saveCHASpinner.getValue() + ", ";
+        if (!saveString.isEmpty())
+        {
+            //cutting off last comma and space
+            saveString = saveString.substring(0, saveString.length() - 2);
+            json += "\"property | Saving Throws | " + saveString + "\",\n      ";
+        }
+
+        //Skills
+        json += "\"property | Skills | " + skillsTextField.getText() + "\",\n      ";
 
         //Damage Vulnerabilities
         String vulnString = "";
@@ -254,7 +283,7 @@ public class GeneratorUI extends JFrame
         if (!vulnString.isEmpty())
         {
             vulnString = vulnString.substring(0, vulnString.length() - 2);
-            json += "\"property | Damage Vulnerabilities | " + vulnString + "\",\n";
+            json += "\"property | Damage Vulnerabilities | " + vulnString + "\",\n      ";
         }
 
         //Damage Resistances
@@ -285,11 +314,10 @@ public class GeneratorUI extends JFrame
             resString += "radiant, ";
         if (resThunderCheckBox.isSelected())
             resString += "thunder, ";
-
         if (!resString.isEmpty())
         {
             resString = resString.substring(0, resString.length() - 2);
-            json += "\"property | Damage Resistances | " + resString + "\",\n";
+            json += "\"property | Damage Resistances | " + resString + "\",\n      ";
         }
 
 
@@ -321,15 +349,134 @@ public class GeneratorUI extends JFrame
             immuString += "radiant, ";
         if (immuThunderCheckBox.isSelected())
             immuString += "thunder, ";
-
         if (!immuString.isEmpty())
         {
             immuString = immuString.substring(0, immuString.length() - 2);
-            json += "\"property | Damage Immunities | " + immuString + "\",\n";
+            json += "\"property | Damage Immunities | " + immuString + "\",\n      ";
         }
 
+        //Condition Immunities
+        String condiString = "";
+        if (blindedCheckBox.isSelected())
+            condiString += "blinded, ";
+        if (charmedCheckBox.isSelected())
+            condiString += "charmed, ";
+        if (deafenedCheckBox.isSelected())
+            condiString += "deafened, ";
+        if (exhaustedCheckBox.isSelected())
+            condiString += "exhausted, ";
+        if (frightenedCheckBox.isSelected())
+            condiString += "frightened, ";
+        if (grappledCheckBox.isSelected())
+            condiString += "grappled, ";
+        if (incapacitatedCheckBox.isSelected())
+            condiString += "incapacitated, ";
+        if (invisibleCheckBox.isSelected())
+            condiString += "invisible, ";
+        if (paralysedCheckBox.isSelected())
+            condiString += "paralysed, ";
+        if (petrifiedCheckBox.isSelected())
+            condiString += "petrified, ";
+        if (poisonedCheckBox.isSelected())
+            condiString += "poisoned, ";
+        if (proneCheckBox.isSelected())
+            condiString += "prone, ";
+        if (restrainedCheckBox.isSelected())
+            condiString += "restrained, ";
+        if (stunnedCheckBox.isSelected())
+            condiString += "stunned, ";
+        if (unconsciousCheckBox.isSelected())
+            condiString += "unconscious, ";
+        if (!condiString.isEmpty())
+        {
+            condiString = condiString.substring(0,condiString.length()-2);
+            json += "\"property | Condition Immunities | " + condiString + "\",\n      ";
+        }
+
+        //Senses
+        String senseString = "";
+        if (((int)blindsightSpinner.getValue()) != 0)
+        {
+            senseString += "blindsight " + blindsightSpinner.getValue() + " ft.";
+            if (blindBeyondCheckBox.isSelected())
+                senseString += "(blind beyond this radius)";
+            senseString += ", ";
+        }
+        if (((int)darkvisionSpinner.getValue()) != 0)
+            senseString += "darkvision " + darkvisionSpinner.getValue() + " ft., ";
+        if (!otherSensesTextField.getText().isEmpty())
+            senseString += otherSensesTextField.getText() + ", ";
+        if (!senseString.isEmpty())
+            senseString = senseString.substring(0,senseString.length()-2);
+        json += "\"property | Senses | " + senseString
+                + ", passive Perception " + passivePerceptionSpinner.getValue() + "\",\n      ";
+
+        //Languages
+        json += "\"property | Languages | ";
+        if (languagesTextField.getText().isEmpty())
+        {
+            json += "-\",\n      ";
+        }else
+        {
+            json += languagesTextField.getText() + "\",\n      ";
+        }
+
+        //Challenge
+        json += "\"property | Challenge | " + challengeRatingSpinner.getSelectedItem() + " ("
+                + xpTextField.getText() + ")\",\n      \"rule\",\n      ";
+
+        //Traits
+        if (!traitsTextArea.getText().isEmpty())
+        {
+            String traitLines[] = traitsTextArea.getText().split("\\r?\\n      ");
+            for (String traitString : traitLines)
+            {
+                if (!traitString.isEmpty())
+                    json += "\"description | " + traitString + "\",\n      ";
+            }
+        }
+
+        //Actions
+        if(!actionsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Actions\",\n      ";
+            String actionLines[] = actionsTextArea.getText().split("\\r?\\n      ");
+            for (String actionString : actionLines)
+            {
+                if (!actionString.isEmpty())
+                    json += "\"description | " + actionString + "\",\n      ";
+            }
+        }
+
+        //Reactions
+        if(!reactionsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Reactions\",\n      ";
+            String reactionLines[] = reactionsTextArea.getText().split("\\r?\\n      ");
+            for (String reactionString : reactionLines)
+            {
+                if (!reactionString.isEmpty())
+                    json += "\"description | " + reactionString + "\",\n      ";
+            }
+        }
+
+        //Legendary Actions
+        if(!legendaryActionsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Legendary Actions\",\n      ";
+            String legendaryActionLines[] = legendaryActionsTextArea.getText().split("\\r?\\n");
+            for (String legendaryActionString : legendaryActionLines)
+            {
+                if (!legendaryActionString.isEmpty())
+                    json += "\"description | " + legendaryActionString + "\",\n      ";
+            }
+        }
+
+        //cutting last comma
+        json = json.substring(0,json.length()-8) + "\n";
+
         //Close and return
-        json += "],\n\"tags\": []\n}\n]";
+        json += "    ],\n    \"tags\": []\n  }\n]";
         return json;
     }
 }
