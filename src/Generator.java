@@ -1,9 +1,11 @@
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
-import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.net.URI;
 import java.nio.file.Files;
 import java.util.List;
@@ -33,7 +35,7 @@ public class Generator
                 ae ->
                 {
                     StringSelection selection = new StringSelection(_decksFolder.getAbsolutePath());
-                    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,selection);
+                    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
                     _menuUI.setVisible(false);
                     Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
                     if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE))
@@ -41,8 +43,7 @@ public class Generator
                         try
                         {
                             desktop.browse(new URI("https://crobi.github.io/rpg-cards/generator/generate.html"));
-                        }
-                        catch (Exception e)
+                        } catch (Exception e)
                         {
                             e.printStackTrace();
                         }
@@ -66,7 +67,7 @@ public class Generator
         String json = _generatorUI.getJSONString();
         String cardName = _generatorUI.getCardName().toLowerCase();
         JFileChooser saver = new JFileChooser(_cardsFolder);
-        saver.setFileFilter(new FileNameExtensionFilter(".json","json"));
+        saver.setFileFilter(new FileNameExtensionFilter(".json", "json"));
         saver.setSelectedFile(new File(_cardsFolder.getPath() + "\\" + cardName + ".json"));
         int returnValue = saver.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION)
@@ -74,8 +75,10 @@ public class Generator
             File cardFile = saver.getSelectedFile();
             if (cardFile.exists())
             {
-                int result = JOptionPane.showConfirmDialog(null,"The file exists, overwrite?","Existing file",JOptionPane.YES_NO_CANCEL_OPTION);
-                switch(result){
+                int result = JOptionPane.showConfirmDialog(null, "The file exists, overwrite?", "Existing file",
+                                                           JOptionPane.YES_NO_CANCEL_OPTION);
+                switch (result)
+                {
                     case JOptionPane.YES_OPTION:
                         saver.approveSelection();
                         return;
@@ -94,16 +97,19 @@ public class Generator
             {
                 writer = new FileWriter(cardFile.getPath());
                 writer.write(json);
-            }
-            catch (IOException e)
+            } catch (IOException e)
             {
                 System.err.println("Could not write to File " + cardFile.getPath() + ".");
-            }
-            finally
+            } finally
             {
                 if (writer != null)
-                    try{writer.close();}
-                    catch (IOException e) {e.printStackTrace();}
+                    try
+                    {
+                        writer.close();
+                    } catch (IOException e)
+                    {
+                        e.printStackTrace();
+                    }
             }
 
             _generatorUI.setVisible(false);
@@ -129,23 +135,23 @@ public class Generator
                     for (String line : contentLines)
                         content += line + "\n";
                     //cutoff square brackets and corresponding \n and last \n
-                    content = content.substring(3,content.length()-3) + ",\n";
+                    content = content.substring(3, content.length() - 3) + ",\n";
                 } catch (IOException e)
                 {
                     e.printStackTrace();
                 }
                 json += content;
             }
-            json = json.substring(0,json.length()-2) + "\n]";
+            json = json.substring(0, json.length() - 2) + "\n]";
 
             JFileChooser saver = new JFileChooser(_decksFolder);
-            saver.setFileFilter(new FileNameExtensionFilter(".json","json"));
+            saver.setFileFilter(new FileNameExtensionFilter(".json", "json"));
             saver.setSelectedFile(new File("deck" + _decksFolder.listFiles().length + ".json"));
             int returnValueSaver = saver.showSaveDialog(null);
             File deck;
             if (returnValueSaver == JFileChooser.APPROVE_OPTION)
             {
-                if(saver.getSelectedFile().getPath().endsWith(".json"))
+                if (saver.getSelectedFile().getPath().endsWith(".json"))
                     deck = saver.getSelectedFile();
                 else
                 {
@@ -158,23 +164,21 @@ public class Generator
                 {
                     writer = new FileWriter(deck.getPath());
                     writer.write(json);
-                }
-                catch (IOException e)
+                } catch (IOException e)
                 {
                     System.err.println("Could not create deck file");
-                }
-                finally
+                } finally
                 {
                     if (writer != null)
                         try
                         {
                             writer.close();
-                        } catch (IOException e) {e.printStackTrace();}
+                        } catch (IOException e)
+                        {
+                            e.printStackTrace();
+                        }
                 }
             }
-
-
-
         }
     }
 
