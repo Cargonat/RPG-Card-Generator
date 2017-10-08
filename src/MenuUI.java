@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class MenuUI extends JFrame
 {
@@ -17,6 +18,13 @@ public class MenuUI extends JFrame
     private JButton _addNewCardButton;
     private JButton _compileDeckButton;
 
+    JButton getOpenRPGCardsInButton()
+    {
+        return _openRPGCardsInButton;
+    }
+
+    private JButton _openRPGCardsInButton;
+
     MenuUI()
     {
         super("RPC Cards Menu");
@@ -26,6 +34,9 @@ public class MenuUI extends JFrame
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         pack();
+
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         setVisible(true);
     }
 }

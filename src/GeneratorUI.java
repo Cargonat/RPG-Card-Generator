@@ -152,6 +152,11 @@ public class GeneratorUI extends JFrame
         CHASpinner.setValue(10);
     }
 
+    String getCardName()
+    {
+        return nameTextField.getText();
+    }
+
     //generates JSON String
     String getJSONString()
     {
