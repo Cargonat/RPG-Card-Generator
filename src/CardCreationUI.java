@@ -1,9 +1,9 @@
 import javax.swing.*;
 
-public class GeneratorUI extends JFrame
+public class CardCreationUI extends JFrame
 {
 
-    //All UI generated via GeneratorUI
+    //All UI generated via CardCreationUI
 
     private JPanel rootPanel;
     private JTextField nameTextField;
@@ -108,9 +108,9 @@ public class GeneratorUI extends JFrame
     private JTextField alignmentTextField;
 
     //Constructor
-    GeneratorUI()
+    CardCreationUI()
     {
-        super("RPG Cards Generator");
+        super("RPG Cards RPGCardsMain");
 
         setContentPane(rootPanel);
 
@@ -124,7 +124,7 @@ public class GeneratorUI extends JFrame
 
     }
 
-    //JSON Button Getter for ActionListener in Generator.java
+    //JSON Button Getter for ActionListener in RPGCardsMain.java
     JButton getOutputJSONButton()
     {
         return outputJSONButton;

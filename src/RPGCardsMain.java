@@ -10,10 +10,10 @@ import java.net.URI;
 import java.nio.file.Files;
 import java.util.List;
 
-public class Generator
+public class RPGCardsMain
 {
 
-    private static GeneratorUI _generatorUI;
+    private static CardCreationUI _cardCreationUI;
     private static MenuUI _menuUI;
 
     private static File _cardsFolder = new File("cards");
@@ -54,9 +54,9 @@ public class Generator
 
     private static void runGenerator()
     {
-        _generatorUI = new GeneratorUI();
+        _cardCreationUI = new CardCreationUI();
 
-        _generatorUI.getOutputJSONButton().addActionListener
+        _cardCreationUI.getOutputJSONButton().addActionListener
                 (
                         ae -> saveCard()
                 );
@@ -64,8 +64,8 @@ public class Generator
 
     private static void saveCard()
     {
-        String json = _generatorUI.getJSONString();
-        String cardName = _generatorUI.getCardName().toLowerCase();
+        String json = _cardCreationUI.getJSONString();
+        String cardName = _cardCreationUI.getCardName().toLowerCase();
         JFileChooser saver = new JFileChooser(_cardsFolder);
         saver.setFileFilter(new FileNameExtensionFilter(".json", "json"));
         saver.setSelectedFile(new File(_cardsFolder.getPath() + "\\" + cardName + ".json"));
@@ -112,7 +112,7 @@ public class Generator
                     }
             }
 
-            _generatorUI.setVisible(false);
+            _cardCreationUI.setVisible(false);
             _menuUI.setVisible(true);
         }
     }
