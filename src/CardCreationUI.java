@@ -110,7 +110,7 @@ public class CardCreationUI extends JFrame
     //Constructor
     CardCreationUI()
     {
-        super("RPG Cards RPGCardsMain");
+        super("RPG Cards RPGCardsMonsterUIMain");
 
         setContentPane(rootPanel);
 
@@ -124,7 +124,7 @@ public class CardCreationUI extends JFrame
 
     }
 
-    //JSON Button Getter for ActionListener in RPGCardsMain.java
+    //JSON Button Getter for ActionListener in RPGCardsMonsterUIMain.java
     JButton getOutputJSONButton()
     {
         return outputJSONButton;
@@ -449,7 +449,7 @@ public class CardCreationUI extends JFrame
                 {
                     int splitPos = traitString.indexOf(".");
                     traitString = traitString.substring(0,splitPos) + " |" + traitString.substring(splitPos + 1, traitString.length());
-                    json += "\"description | " + traitString + "\",\n      ";
+                    json += "\"description | " + traitString + "\",\n      \"fill | 2\",\n      ";
                 }
         }
 

@@ -6,17 +6,19 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
-import java.net.URI;
 import java.nio.file.Files;
 import java.util.List;
 
-public class RPGCardsMain
+public class RPGCardsMonsterUIMain
 {
 
     private static CardCreationUI _cardCreationUI;
     private static MenuUI _menuUI;
 
     private static File _cardsFolder = new File("cards");
+    private static File _smallCardsFolder = new File("cards\\small");
+    private static File _largeCardsFolder = new File("cards\\large");
+    private static File _hugeCardsFolder = new File("cards\\huge");
     private static File _decksFolder = new File("decks");
 
     private static void runMenu()
@@ -42,7 +44,8 @@ public class RPGCardsMain
                     {
                         try
                         {
-                            desktop.browse(new URI("https://crobi.github.io/rpg-cards/generator/generate.html"));
+                            File generateHTML = new File("C:\\Users\\Tobi\\IdeaProjects\\RPG Cards Generator\\RPG Cards Main\\generator\\generate.html");
+                            desktop.browse(generateHTML.toURI());
                         } catch (Exception e)
                         {
                             e.printStackTrace();
@@ -67,8 +70,20 @@ public class RPGCardsMain
         String json = _cardCreationUI.getJSONString();
         String cardName = _cardCreationUI.getCardName().toLowerCase();
         JFileChooser saver = new JFileChooser(_cardsFolder);
+        String cardPath;
+        if (json.length() < 1300)
+        {
+            cardPath = _smallCardsFolder.getPath() + "\\" + cardName + ".json";
+        } else if (json.length() < 2500)
+        {
+            cardPath = _largeCardsFolder.getPath() + "\\" + cardName + ".json";
+        }
+        else
+        {
+            cardPath = _hugeCardsFolder.getPath() + "\\" + cardName + ".json";
+        }
         saver.setFileFilter(new FileNameExtensionFilter(".json", "json"));
-        saver.setSelectedFile(new File(_cardsFolder.getPath() + "\\" + cardName + ".json"));
+        saver.setSelectedFile(new File(cardPath));
         int returnValue = saver.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION)
         {
@@ -184,9 +199,14 @@ public class RPGCardsMain
 
     public static void main(String[] args)
     {
-        //Test if Cards Folder exists, else make it
+        //Test if Cards Folders exists, else make it
         if (!_cardsFolder.exists())
             _cardsFolder.mkdir();
+        if (!_smallCardsFolder.exists())
+            _smallCardsFolder.mkdir();
+        if (!_largeCardsFolder.exists())
+            _largeCardsFolder.mkdir();
+
         //Test if Decks Folder exists, else make it
         if (!_decksFolder.exists())
             _decksFolder.mkdir();
