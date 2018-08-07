@@ -7,6 +7,12 @@ public class CardCreationUI extends JFrame
 
     private JPanel rootPanel;
     private JTextField nameTextField;
+
+    JTextField getTypeTextField()
+    {
+        return typeTextField;
+    }
+
     private JTextField typeTextField;
     private JSpinner hitDieCountSpinner;
     private JComboBox hitDieComboBox;
@@ -263,7 +269,8 @@ public class CardCreationUI extends JFrame
         }
 
         //Skills
-        json += "\"property | Skills | " + skillsTextField.getText() + "\",\n      ";
+        if (!skillsTextField.getText().equals(""))
+            json += "\"property | Skills | " + skillsTextField.getText() + "\",\n      ";
 
         //Damage Vulnerabilities
         String vulnString = "";
@@ -445,7 +452,7 @@ public class CardCreationUI extends JFrame
             String traitLines[] = traitsTextArea.getText().split("\\r?\\n");
             //noinspection Duplicates
             for (String traitString : traitLines)
-                if (!traitString.isEmpty())
+                if (traitString.length() != 0)
                 {
                     int splitPos = traitString.indexOf(".");
                     traitString = traitString.substring(0,splitPos) + " |" + traitString.substring(splitPos + 1, traitString.length());

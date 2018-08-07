@@ -16,9 +16,6 @@ public class RPGCardsMonsterUIMain
     private static MenuUI _menuUI;
 
     private static File _cardsFolder = new File("cards");
-    private static File _smallCardsFolder = new File("cards\\small");
-    private static File _largeCardsFolder = new File("cards\\large");
-    private static File _hugeCardsFolder = new File("cards\\huge");
     private static File _decksFolder = new File("decks");
 
     private static void runMenu()
@@ -36,7 +33,7 @@ public class RPGCardsMonsterUIMain
         _menuUI.getOpenRPGCardsInButton().addActionListener(
                 ae ->
                 {
-                    StringSelection selection = new StringSelection(_decksFolder.getAbsolutePath());
+                    StringSelection selection = new StringSelection(new File("").getAbsolutePath());
                     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
                     _menuUI.setVisible(false);
                     Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
@@ -44,13 +41,15 @@ public class RPGCardsMonsterUIMain
                     {
                         try
                         {
-                            File generateHTML = new File("C:\\Users\\Tobi\\IdeaProjects\\RPG Cards Generator\\RPG Cards Main\\generator\\generate.html");
+                            File generateHTML = new File("C:\\Users\\Tobi\\IdeaProjects\\RPG Cards Generator\\rpg-cards.vigil\\generator\\generate.html");
                             desktop.browse(generateHTML.toURI());
+                            System.exit(1);
                         } catch (Exception e)
                         {
                             e.printStackTrace();
                         }
                     }
+
                 }
         );
     }
@@ -69,22 +68,13 @@ public class RPGCardsMonsterUIMain
     {
         String json = _cardCreationUI.getJSONString();
         String cardName = _cardCreationUI.getCardName().toLowerCase();
-        JFileChooser saver = new JFileChooser(_cardsFolder);
-        String cardPath;
-        if (json.length() < 1300)
-        {
-            cardPath = _smallCardsFolder.getPath() + "\\" + cardName + ".json";
-        } else if (json.length() < 2500)
-        {
-            cardPath = _largeCardsFolder.getPath() + "\\" + cardName + ".json";
-        }
-        else
-        {
-            cardPath = _hugeCardsFolder.getPath() + "\\" + cardName + ".json";
-        }
+        JFileChooser saver;
+        String cardPath = _cardsFolder.getPath() + "\\" + cardName + ".json";
+        saver = new JFileChooser(_cardsFolder);
         saver.setFileFilter(new FileNameExtensionFilter(".json", "json"));
         saver.setSelectedFile(new File(cardPath));
         int returnValue = saver.showSaveDialog(null);
+        //noinspection Duplicates
         if (returnValue == JFileChooser.APPROVE_OPTION)
         {
             File cardFile = saver.getSelectedFile();
@@ -137,6 +127,7 @@ public class RPGCardsMonsterUIMain
         JFileChooser chooser = new JFileChooser(_cardsFolder);
         chooser.setMultiSelectionEnabled(true);
         int returnValueOpener = chooser.showOpenDialog(null);
+        //noinspection Duplicates
         if (returnValueOpener == JFileChooser.APPROVE_OPTION)
         {
             File[] files = chooser.getSelectedFiles();
@@ -199,13 +190,9 @@ public class RPGCardsMonsterUIMain
 
     public static void main(String[] args)
     {
-        //Test if Cards Folders exists, else make it
+        //Test if Cards Folder exists, else make it
         if (!_cardsFolder.exists())
             _cardsFolder.mkdir();
-        if (!_smallCardsFolder.exists())
-            _smallCardsFolder.mkdir();
-        if (!_largeCardsFolder.exists())
-            _largeCardsFolder.mkdir();
 
         //Test if Decks Folder exists, else make it
         if (!_decksFolder.exists())
