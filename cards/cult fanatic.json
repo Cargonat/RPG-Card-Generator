@@ -1,0 +1,33 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Cult Fanatic",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any non-good alignment",
+      "rule",
+      "property | Armor class | 13 (leather armor)",
+      "property | Hit points | 33 (6d8 + 6)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 11 | 14 | 12 | 10 | 13 | 14",
+      "rule",
+      "property | Skills | Deception +4, Persuas ion +4, Religion +2",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | any one langu age (u sually Common)",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Dark Devotion | The fanatic has advantage on saving throws against being charmed or frightened.",
+      "description | Spellcasting | The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:",
+      "description | Cantrips (at will) | light, sacred flam e, thaumaturgy",
+      "description | 1st level (4 slots) | command, inflict wounds, shield of faith",
+      "description | 2nd level (3 slots) | hold person, spiritual weapon",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The fan atic makes two melee attacks.",
+      "description | Dagger | Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage."
+    ],
+    "tags": []
+  }
+]

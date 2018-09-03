@@ -1,0 +1,27 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Guard",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 16 (chain shirt, shield)",
+      "property | Hit points | 11 (2d8 + 2)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 13 | 12 | 12 | 10 | 11 | 10",
+      "rule",
+      "property | Skills | Perception +2",
+      "property | Senses | , passive Perception 12",
+      "property | Languages | any one language (usually Common)",
+      "property | Challenge | 1/8 (25)",
+      "rule",
+      "fill | 2",
+      "section | Actions",
+      "description | Spear | Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    ],
+    "tags": []
+  }
+]

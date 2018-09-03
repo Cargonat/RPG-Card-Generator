@@ -1,0 +1,29 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Giant Elk",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge beast, unaligned",
+      "rule",
+      "property | Armor class | 14 (Natural Armor)",
+      "property | Hit points | 42 (5d12 + 10)",
+      "property | Speed | 60 ft.",
+      "rule",
+      "dndstats | 19 | 16 | 14 | 7 | 14 | 10",
+      "rule",
+      "property | Skills | Perception +4",
+      "property | Senses | , passive Perception 14",
+      "property | Languages | Elvish, Giant Elk and Sylvan but can't speak them",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Charge | If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
+      "fill | 2",
+      "section | Actions",
+      "description | Ram | Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+      "description | Hooves | Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

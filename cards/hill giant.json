@@ -1,0 +1,29 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Hill Giant",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge giant, chaotic evil",
+      "rule",
+      "property | Armor class | 13 (natural armor)",
+      "property | Hit points | 105 (10d12 + 40)",
+      "property | Speed | 40 ft.",
+      "rule",
+      "dndstats | 21 | 8 | 19 | 5 | 9 | 6",
+      "rule",
+      "property | Skills | Perception +2",
+      "property | Senses | , passive Perception 12",
+      "property | Languages | Giant",
+      "property | Challenge | 5 (1800)",
+      "rule",
+      "section | Actions",
+      "description | Multiattack | The giant makes two greatclub attacks .",
+      "description | Greatclub | Melee Weapon Attack: +8 to hit, reach 10 ft ., one ta rget. Hit: 18 (3d8 + 5) bludgeoning damage.",
+      "description | Rock | Ranged Weapon Attack: +8 to hit, range 60/240 ft ., one target. Hit: 21 (3d10 + 5) bludgeoning damage.",
+      "description | Squash | Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or smaller creature. Hit: 26 (6d6 + 5) bludgeoning damage, the giant lands prone in the target's space, and the target is grappled (escape DC 15). Until this grapple ends, the target is prone. The grapple ends early if the giant stands up."
+    ],
+    "tags": []
+  }
+]

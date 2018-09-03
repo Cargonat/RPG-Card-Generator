@@ -1,0 +1,27 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Riding Horse",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large beast, unaligned",
+      "rule",
+      "property | Armor class | 10",
+      "property | Hit points | 13 (2d10 + 2)",
+      "property | Speed | 60 ft.",
+      "rule",
+      "dndstats | 16 | 10 | 12 | 2 | 11 | 7",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | -",
+      "property | Challenge | 1/4 (50)",
+      "rule",
+      "fill | 2",
+      "section | Actions",
+      "description | Hooves | Melee Weapon Attack: +2 to hit, reach 5 ft ., one target. Hit: 8 (2d4 + 3) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

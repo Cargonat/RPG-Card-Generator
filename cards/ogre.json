@@ -1,0 +1,28 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Ogre",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large giant, chaotic evil",
+      "rule",
+      "property | Armor class | 11 (hide armor)",
+      "property | Hit points | 59 (7d10 + 21)",
+      "property | Speed | 40 ft.",
+      "rule",
+      "dndstats | 19 | 8 | 16 | 5 | 7 | 7",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | darkvision 60 ft., passive Perception 8",
+      "property | Languages | Common, Giant",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "fill | 2",
+      "section | Actions",
+      "description | Greatclub | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+      "description | Javelin | Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    ],
+    "tags": []
+  }
+]

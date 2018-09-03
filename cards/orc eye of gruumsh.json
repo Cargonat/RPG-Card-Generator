@@ -1,0 +1,33 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Orc Eye of Gruumsh",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (orc), chaotic evil",
+      "rule",
+      "property | Armor class | 16 (ring mail, shield)",
+      "property | Hit points | 45 (6d8 + 18)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 16 | 12 | 16 | 9 | 13 | 12",
+      "rule",
+      "property | Skills | Intimidation +3, Religion +1",
+      "property | Senses | darkvision 60 ft., passive Perception 11",
+      "property | Languages | Common, Orc",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Aggressive | As a bonus action, the ore can move up to its speed toward a hostile creature that it can see.",
+      "description | Gruumsh's Fury | The ore deals an extra 4 (ld8) damage when it hits with a weapon attack (included in the attack).",
+      "description | Spellcasting | The ore is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The ore has the following cleric spells prepared: ",
+      "description | Cantrips (at-will) | guidance, resistance, thaumaturgy ",
+      "description | 1st level (4 slots) | bless, command",
+      "description | 2nd level (2 slots) | augury, spiritual weapon (spear)",
+      "fill | 2",
+      "section | Actions",
+      "description | Spear | Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (ld6 + 3 plus ld8) piercing damage, or 12 (2d8 + 3) piercing damage if used with two hands to make a melee attack."
+    ],
+    "tags": []
+  }
+]

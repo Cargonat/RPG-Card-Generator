@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Zombie",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium undead, neutral evil",
+      "rule",
+      "property | Armor class | 8",
+      "property | Hit points | 22 (3d8 + 9)",
+      "property | Speed | 20 ft.",
+      "rule",
+      "dndstats | 13 | 6 | 16 | 3 | 6 | 5",
+      "rule",
+      "property | Skills | ",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | poisoned",
+      "property | Senses | darkvision 60 ft., passive Perception 8",
+      "property | Languages | understands the languages it knew in life but can't speak",
+      "property | Challenge | 1/4 (50)",
+      "rule",
+      "description | Undead Fortitude | If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 +the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+      "fill | 2",
+      "section | Actions",
+      "description | Slam | Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

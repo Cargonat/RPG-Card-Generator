@@ -1,0 +1,41 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Storm Giant",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge giant, chaotic good",
+      "rule",
+      "property | Armor class | 16 (scale mail)",
+      "property | Hit points | 230 (20d12 + 100)",
+      "property | Speed | 50 ft., swim 50 ft.",
+      "rule",
+      "dndstats | 29 | 14 | 20 | 16 | 18 | 18",
+      "rule",
+      "property | Saving Throws | Str +14, Con +10, Wis +9, Cha +9",
+      "property | Skills | Arcana +8, Athletics+ 14, History +8, Perception +9",
+      "property | Damage Resistances | cold",
+      "property | Damage Immunities | lightning, thunder",
+      "property | Senses | , passive Perception 19",
+      "property | Languages | Common, Giant",
+      "property | Challenge | 13 (10000)",
+      "rule",
+      "description | Amphibious | The giant can breathe air and water.",
+      "fill | 2",
+      "description | Innate Spellcasting | The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:",
+      "fill | 2",
+      "description | At will | detect magic, feather fall, levitate, light",
+      "fill | 2",
+      "description | 3/day each | control weather, water breathing",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The giant makes two greatsword attacks.",
+      "description | Greatsword | Melee Weapon Attack: +14 to hit, reach 10ft., one target. Hit: 30 (6d6 + 9) slashing damage.",
+      "description | Rock | Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 35 (4d12 + 9) bludgeoning damage.",
+      "description | Lightning Strike (Recharge 5-6) | The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.",
+      "description | Thunderous Stomp (Recharge 6) | The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a DC 17 Constitution saving throw or take 33 (6dl 0) thunder damage and be deafened until the start of the giant's next turn. On a successful save, a creature takes half as much damage and isn't deafened. The thunderclap can be heard out to a range of 1,200 feet."
+    ],
+    "tags": []
+  }
+]

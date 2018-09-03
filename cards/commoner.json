@@ -1,0 +1,27 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Commoner",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 10",
+      "property | Hit points | 4 (1d8)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 10 | 10 | 10 | 10 | 10 | 10",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | any one language (usually Common)",
+      "property | Challenge | 0 (10)",
+      "rule",
+      "fill | 2",
+      "section | Actions",
+      "description | Club | Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Troll",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large giant, chaotic evil",
+      "rule",
+      "property | Armor class | 15 (Natural Armor)",
+      "property | Hit points | 84 (8d10 + 40)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 18 | 13 | 20 | 7 | 9 | 7",
+      "rule",
+      "property | Skills | Perception +2",
+      "property | Senses | darkvision 60 ft., passive Perception 12",
+      "property | Languages | Giant",
+      "property | Challenge | 5 (1800)",
+      "rule",
+      "description | Keen Smell | The troll has advantage on Wisdom (Perception) checks that rely on smell.",
+      "fill | 2",
+      "description | Regeneration | The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The troll makes three attacks: one with its bite and two with its claws.",
+      "description | Bite | Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+      "description | Claw | Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    ],
+    "tags": []
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Tribal Warrior",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid, any alignment",
+      "rule",
+      "property | Armor class | 12 (Hide Armor)",
+      "property | Hit points | 29 (2d8 + 20)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 13 | 11 | 12 | 8 | 11 | 8",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | Any one language",
+      "property | Challenge | 1/8 (25)",
+      "rule",
+      "description | Pack Tactics | The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "fill | 2",
+      "section | Actions",
+      "description | Spear | Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+    ],
+    "tags": []
+  }
+]

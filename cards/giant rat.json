@@ -1,0 +1,29 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Giant Rat",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Small beast, unaligned",
+      "rule",
+      "property | Armor class | 12",
+      "property | Hit points | 7 (2d6)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 7 | 15 | 11 | 2 | 10 | 4",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | darkvision 60 ft., passive Perception 10",
+      "property | Languages | -",
+      "property | Challenge | 1/8 (25)",
+      "rule",
+      "description | Keen Smell | The rat has advantage on Wisdom (Perception) checks that rely on smell.",
+      "description | Pack Tactics | The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "fill | 2",
+      "section | Actions",
+      "description | Bite | Melee Weapon Attack: +4 to hit, reach 5 ft. , one target. Hit: 4 (1d4 + 2) piercing damage."
+    ],
+    "tags": []
+  }
+]

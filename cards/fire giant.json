@@ -1,0 +1,34 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Fire Giant",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge giant, lawful evil",
+      "rule",
+      "property | Armor class | 18 (plate)",
+      "property | Hit points | 162 (13d12 + 78)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 25 | 9 | 23 | 10 | 14 | 13",
+      "rule",
+      "property | Saving Throws | Dex +3, Con +10, Cha +5",
+      "property | Skills | Athletics +11, Perception +6",
+      "property | Damage Immunities | fire",
+      "property | Senses | , passive Perception 16",
+      "property | Languages | Giant",
+      "property | Challenge | 9 (5000)",
+      "rule",
+      "description | Siege Monster | The giant deals double damage to objects and structures.",
+      "fill | 2",
+      "description | Tackle | When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The giant makes two greatsword attacks .",
+      "description | Greatsword | Melee Weapon Attack: +11 to hit, reach 10ft., one target. Hit: 28 (6d6 + 7) slashing damage.",
+      "description | Rock | Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

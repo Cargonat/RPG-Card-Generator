@@ -1,0 +1,32 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Tressym",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Tiny beast, chaotic neutral",
+      "rule",
+      "property | Armor class | 12",
+      "property | Hit points | 5 (2d4)",
+      "property | Speed | 40 ft., fly 40 ft., climb 30 ft.",
+      "rule",
+      "dndstats | 3 | 15 | 10 | 11 | 12 | 12",
+      "rule",
+      "property | Skills | Perception +5, Stealth +4",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | poisoned",
+      "property | Senses | darkvision 60 ft., passive Perception 15",
+      "property | Languages | understands Common but can't speak",
+      "property | Challenge | 0 (10)",
+      "rule",
+      "description | Detect Invisibility | Within 60 feet of the tressym, magical invisibility fails to conceal anything from the tressym's sight.",
+      "description | Keen Smell | The tressym has advantage on Wisdom (Perception) checks that rely on smell.",
+      "description | Poison Sense | A tressym can detect whether a substance is poisonous by taste, touch, or smell.",
+      "fill | 2",
+      "section | Actions",
+      "description | Claws | Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    ],
+    "tags": []
+  }
+]

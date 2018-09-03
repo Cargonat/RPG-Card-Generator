@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Archer",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 16 (studded leather)",
+      "property | Hit points | 75 (10d8 + 30)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 11 | 18 | 16 | 11 | 13 | 10",
+      "rule",
+      "property | Skills | Acrobatics +6, Perception +5",
+      "property | Senses | , passive Perception 15",
+      "property | Languages | any one language (usually Common)",
+      "property | Challenge | 3 (700)",
+      "rule",
+      "description | Archer's Eye (3/Day) | As a bonus action, the archer can add 1d10 to its next attack or damage roll with a longbow or shortbow.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The archer makes two attacks with its longbow.",
+      "description | Shortsword | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+      "description | Longbow | Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    ],
+    "tags": []
+  }
+]

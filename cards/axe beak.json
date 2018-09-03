@@ -1,0 +1,26 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Axe Beak",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large beast, unaligned",
+      "rule",
+      "property | Armor class | 11",
+      "property | Hit points | 19 (3d10 + 3)",
+      "property | Speed | 50 ft.",
+      "rule",
+      "dndstats | 14 | 12 | 12 | 2 | 10 | 5",
+      "rule",
+      "property | Skills | ",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | -",
+      "property | Challenge | 1/4 (50)",
+      "rule",
+      "section | Actions",
+      "description | Beak | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
+    ],
+    "tags": []
+  }
+]

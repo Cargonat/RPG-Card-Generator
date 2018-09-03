@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Orog",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humaoid (orc), chaotic evil",
+      "rule",
+      "property | Armor class | 18 (plate)",
+      "property | Hit points | 42 (5d8 + 20)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 18 | 12 | 18 | 12 | 11 | 12",
+      "rule",
+      "property | Skills | Intimidation +5, Survival +2",
+      "property | Senses | darkvision 60 ft., passive Perception 10",
+      "property | Languages | Common, Orc",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Aggressive | As a bonus action, the orog can move up to its speed toward a hostile creature that it can see.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The orog makes two greataxe attacks.",
+      "description | Greataxe | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (ldl2 + 4) slashing damage.",
+      "description | Javelin | Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft ., one target. Hit: 7 (ld6 + 4) piercing damage."
+    ],
+    "tags": []
+  }
+]

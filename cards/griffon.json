@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Griffon",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large monstrosity, unaligned",
+      "rule",
+      "property | Armor class | 12",
+      "property | Hit points | 59 (7d10 + 21)",
+      "property | Speed | 30 ft., fly 80 ft.",
+      "rule",
+      "dndstats | 18 | 15 | 16 | 2 | 13 | 8",
+      "rule",
+      "property | Skills | Perception +5",
+      "property | Senses | darkvision 60 ft., passive Perception 15",
+      "property | Languages | -",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Keen Sight | The griffon has advantage on Wisdom (Perception) checks that rely on sight.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The griffon makes two attacks: one with its beak and one with its claws.",
+      "description | Beak | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+      "description | Claws | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    ],
+    "tags": []
+  }
+]

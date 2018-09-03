@@ -1,0 +1,32 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Flying Sword",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Small construct, unaligned",
+      "rule",
+      "property | Armor class | 17 (natural armor)",
+      "property | Hit points | 17 (5d6)",
+      "property | Speed | 0 ft., fly 50 ft.",
+      "rule",
+      "dndstats | 12 | 15 | 11 | 1 | 5 | 1",
+      "rule",
+      "property | Saving Throws | Dex +4",
+      "property | Skills | ",
+      "property | Damage Immunities | poison, psychic",
+      "property | Condition Immunities | blinded, charmed, deafened, frightened, paralysed, petrified, poisoned",
+      "property | Senses | blindsight 60 ft.(blind beyond this radius), passive Perception 7",
+      "property | Languages | -",
+      "property | Challenge | 1/4 (50)",
+      "rule",
+      "description | Antimagic Susceptibility | The sword is incapacitated while in the area of an anti magic field. if targeted by dispel magic, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+      "description | False Appearance | Whi le the sword remains motionless and isn't flying, it is indistinguishable from a normal sword.",
+      "fill | 2",
+      "section | Actions",
+      "description | Longsword | Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: S (1d8 + 1) slashing damage."
+    ],
+    "tags": []
+  }
+]

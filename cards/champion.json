@@ -1,0 +1,33 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Champion",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 18 (plate)",
+      "property | Hit points | 143 (22d8 + 44)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 20 | 15 | 14 | 10 | 14 | 12",
+      "rule",
+      "property | Saving Throws | Str +9, Con +6",
+      "property | Skills | Athletics +9, Intimidation +5, Perception +6",
+      "property | Senses | , passive Perception 16",
+      "property | Languages | any one language (usually Common)",
+      "property | Challenge | 9 (5000)",
+      "rule",
+      "description | Indomitable (2/Day) | The,champion rerolls a failed saving throw.",
+      "fill | 2",
+      "description | Second Wind (Recharges after a Short or Long Rest) | As a bonus action, the champion can regain 20 hit points.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The champion makes three attacks with its greatsword or its shortbow.",
+      "description | Creatsword | Melee Weapon Attack: +9 to hit, r~ach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage, plus 7 (2d6) slashing damage if the champion has more than half of its total hit points remaining.",
+      "description | Shortbow | Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (ld6 + 2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
+    ],
+    "tags": []
+  }
+]

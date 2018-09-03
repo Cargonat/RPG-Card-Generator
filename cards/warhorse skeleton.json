@@ -1,0 +1,29 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Warhorse Skeleton",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large undead, lawful evil",
+      "rule",
+      "property | Armor class | 13",
+      "property | Hit points | 22 (3d10 + 6)",
+      "property | Speed | 60 ft.",
+      "rule",
+      "dndstats | 18 | 12 | 15 | 2 | 8 | 5",
+      "rule",
+      "property | Skills | ",
+      "property | Damage Vulnerabilities | bludgeoning",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | exhausted, poisoned",
+      "property | Senses | darkvision 60 ft., passive Perception 9",
+      "property | Languages | -",
+      "property | Challenge | 1/2 (100)",
+      "rule",
+      "section | Actions",
+      "description | Hooves | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    ],
+    "tags": []
+  }
+]

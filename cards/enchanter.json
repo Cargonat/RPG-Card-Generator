@@ -1,0 +1,43 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Enchanter",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 12 (15 with mage armor)",
+      "property | Hit points | 40 (9d8)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 9 | 14 | 11 | 17 | 12 | 11",
+      "rule",
+      "property | Saving Throws | Int +6, Wis +4",
+      "property | Skills | Arcana +6, History +6",
+      "property | Senses | , passive Perception 11",
+      "property | Languages | any four languages",
+      "property | Challenge | 5 (1800)",
+      "rule",
+      "description | Spellcasting | The enchanter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The enchanter has the following wizard spells prepared (*Enchantment spell of 1st level or higher):",
+      "fill | 2",
+      "description | Cantrips (at will) | friends , mage hand, mending, message",
+      "fill | 2",
+      "description | 1st level (4 slots) | charm person,* mage armor, magic missile",
+      "fill | 2",
+      "description | 2nd level (3 slots) | hold person,* invisibility, suggestion*",
+      "fill | 2",
+      "description | 3rd level (3 slots) | fireball, haste, tongues",
+      "fill | 2",
+      "description | 4th level (3 slots) | dominate beast,* stoneskin",
+      "fill | 2",
+      "description | 5th level (2 slots) | hold monster*",
+      "fill | 2",
+      "section | Actions",
+      "description | Quarterstaff | Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.",
+      "section | Reactions",
+      "description | Instinctive Charm (Recharges after the Enchanter Casts an Enchantment Spell of 1st Level or Higher) | The enchanter tries to magically divert an attack made against it, provided that the attacker is with in 30 feet of it and visible to it. The enchanter must decide to do so before the attack hits or misses. The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than the enchanter or itself. If multiple creatures are closest, the attacker chooses which one to target."
+    ],
+    "tags": []
+  }
+]

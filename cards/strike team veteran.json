@@ -1,0 +1,34 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Strike Team Veteran",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium dwarf, lawful good",
+      "rule",
+      "property | Armor class | 11 (leather armor)",
+      "property | Hit points | 58 (9d8 + 18)",
+      "property | Speed | 25 ft.",
+      "rule",
+      "dndstats | 16 | 13 | 14 | 10 | 11 | 10",
+      "rule",
+      "property | Skills | Athletics +5, Perception +2",
+      "property | Damage Resistances | poison",
+      "property | Senses | darkvision 60 ft., passive Perception 12",
+      "property | Languages | Common, Dwarvish",
+      "property | Challenge | 3 (700)",
+      "rule",
+      "description | Hard to poison | Advantage on saving throws against poison.",
+      "fill | 2",
+      "description | 1 potion of gaseous form | Transform into a gasous cloud for up to one hour. Your only movement becomes 10 ft. flying speed. You can enter and occupy other creatures spaces. You also  gain resistance against nonmagical damage and advantages on Str, Dex and Con saving throws.You can pass through small holes and openings and can't fall. While in this form, you  can't talk, manipulate objects, use carried items, attack or cast spells.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The veteran makes two battleaxe attacks.",
+      "description | Battleaxe | Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
+      "description | Handaxe | Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+      "description | Heavy Crossbow | Ranged Weapon Attack: +3 to hit, range 100/400 ft. , one target. Hit: 5 (1d10) piercing damage."
+    ],
+    "tags": []
+  }
+]

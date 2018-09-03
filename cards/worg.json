@@ -1,0 +1,28 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Worg",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large monstrosity, neutral evil",
+      "rule",
+      "property | Armor class | 13 (natural armor)",
+      "property | Hit points | 26 (4d10 + 4)",
+      "property | Speed | 50 ft.",
+      "rule",
+      "dndstats | 16 | 13 | 13 | 7 | 11 | 8",
+      "rule",
+      "property | Skills | Perception +4",
+      "property | Senses | darkvision 60 ft., passive Perception 14",
+      "property | Languages | Goblin, Worg",
+      "property | Challenge | 1/2 (100)",
+      "rule",
+      "description | Keen Hearing and Smell | The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "fill | 2",
+      "section | Actions",
+      "description | Bite | Melee Weapon Attack: +5 to hit, reach 5 ft ., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    ],
+    "tags": []
+  }
+]

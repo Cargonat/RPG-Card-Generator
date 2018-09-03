@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Scout",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 16 (leather armor)",
+      "property | Hit points | 16 (3d8 + 3)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 11 | 14 | 12 | 11 | 13 | 11",
+      "rule",
+      "property | Skills | Nature +4, Perception +5, Stealth +6, Survival +5",
+      "property | Senses | , passive Perception 15",
+      "property | Languages | any one language (usually Common)",
+      "property | Challenge | 1/2 (100)",
+      "rule",
+      "description | Keen Hearing and Sight | The sco ut has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The scout makes two melee attacks or two ranged attacks.",
+      "description | Shortsword | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "description | Longbow | Ranged Weapon Attack: +4 to hit, ranged 150/600 ft. , one target. Hit: 6 (1d8 + 2) piercing damage."
+    ],
+    "tags": []
+  }
+]

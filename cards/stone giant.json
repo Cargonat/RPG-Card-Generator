@@ -1,0 +1,35 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Stone Giant",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge giant, neutral",
+      "rule",
+      "property | Armor class | 17 (natural armor)",
+      "property | Hit points | 126 (11d12 + 55)",
+      "property | Speed | 40 ft.",
+      "rule",
+      "dndstats | 23 | 15 | 20 | 10 | 12 | 9",
+      "rule",
+      "property | Saving Throws | Dex +5, Con +8, Wis +4",
+      "property | Skills | Athletics +12, Perception +4",
+      "property | Senses | darkvision 60 ft., passive Perception 14",
+      "property | Languages | Giant",
+      "property | Challenge | 7 (2900)",
+      "rule",
+      "description | Stone Camouflage | The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The giant makes two greatclub attacks.",
+      "description | Greatclub | Melee Weapon Attack: +9 to hit, reach 15ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
+      "description | Rock | Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.",
+      "description | Fling | The giant tries to throw a Small or Medium creature within 10 feet ofit. The target must succeed on a DC 17 Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land prone, taking 1d6 bludgeoning damage for every 10 feet it was thrown.",
+      "description | Rolling Rocle | The giant sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 22 (3d10 + 6) bludgeoning damage and falling prone on a failed save.",
+      "section | Reactions",
+      "description | Rock Catching | If a rock or similar object is hurled at the giant, the giant can , with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it."
+    ],
+    "tags": []
+  }
+]

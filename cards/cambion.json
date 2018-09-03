@@ -1,0 +1,39 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Cambion",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium fiend, any evil alignment",
+      "rule",
+      "property | Armor class | 19 (scale mail)",
+      "property | Hit points | 82 (11d8 + 33)",
+      "property | Speed | 30 ft., fly 60 ft.",
+      "rule",
+      "dndstats | 18 | 18 | 16 | 14 | 12 | 16",
+      "rule",
+      "property | Saving Throws | Str +7, Con +6, Int +5, Cha +6",
+      "property | Skills | Deception +6, Intimidation +6, Perception +4, Stealth +7",
+      "property | Damage Resistances | bludgeoning, piercing, slashing, cold, fire, lightning, poison",
+      "property | Senses | darkvision 60 ft., passive Perception 14",
+      "property | Languages | Abyssal, Common, Infernal",
+      "property | Challenge | 5 (1800)",
+      "rule",
+      "description | Fiendish Blessing | The AC of the cambion includes its Charisma bonus.",
+      "fill | 2",
+      "description | Innate Spellcasting | The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components",
+      "fill | 2",
+      "description | 3/day each | alter self, command, detect magic.",
+      "fill | 2",
+      "description | 1/day: | plane shift (self only)",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The cambion makes two melee attacks or uses its Fire Ray twice.",
+      "description | Spear | Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft ., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1 d8 + 4) piercing damage if used with two hands to make a melee attack, plus 3 (1 d6) fire damage.",
+      "description | Fire Ray | Ranged Spell Attack: +7 to hit, range 120ft., one target. Hit: 10 (3d6) fire damage.",
+      "description | Fiendish Charm | One humanoid the cambion can see within 30 feet of it must succeed on a DC 14 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the cambion's spoken commands. If the target suffers any harm from the cambion or another creature or receives a suicidal command from the cambion, the target can repeat the saving throw, ending the effect on itself on a success. If a target's saving throw is successful, or if the effect ends for it, the creature is immune to the cambion's Fiendish Charm for the next 24 hours."
+    ],
+    "tags": []
+  }
+]

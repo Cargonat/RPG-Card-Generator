@@ -1,0 +1,44 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Black Pudding",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large ooze, unaligned",
+      "",
+      "rule",
+      "property | Armor class | 7",
+      "property | Hit points | 85 (10d10 + 30)",
+      "property | Speed | 20ft., climb 20ft.",
+      "",
+      "rule",
+      "dndstats | 16 | 5 | 16 | 1 | 6 | 1",
+      "",
+      "rule",
+      "property | Damage Immunities | acid, cold, lightning, slashing",
+      "property | Condition Immunities | blinded, charmed, deafened, exhaustion, frightened, prone",
+      "| property | Skills | Stealth +6",
+      "property | Senses | blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+      "property | Languages | -",
+      "property | Challenge | 4 (1,100 XP)",
+      "",
+      "rule",
+      "description | Amorphous | Move through 1 inch wide spaces without squeezing",
+      "description | Corrosive Form | Touching or hitting with melee attacks causes 4 (1d8) acid damage. Nonmagical wooden or metal weapons corrode: -1 to damage rolls. Destroyed if at -5. Ammunition is destroyed instantly. The pudding can eat through 2-inch-thick, non magical wood or metal in 1 round .",
+      "description | Spider Climb | Can climb even upside down without making ability checks.",
+      "fill | 2",
+      "",
+      "fill | 2",
+      "section | Actions",
+      "description | Pseudopod | Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. Corrodes Armor: Penalty -1. Destroyed if reduced AC to 10.",
+      "",
+      "section | Reactions",
+      "description | Split | When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
+    ],
+    "tags": [
+      "creature",
+      "ooze"
+    ]
+  }
+]

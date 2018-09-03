@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Thug",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid, any non-good",
+      "rule",
+      "property | Armor class | 11 (leather armor)",
+      "property | Hit points | 32 (5d8 + 10)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 15 | 11 | 14 | 10 | 10 | 11",
+      "rule",
+      "property | Skills | Intimidation +2",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | Common",
+      "property | Challenge | 1/2 (100)",
+      "rule",
+      "description | Pack Tactics | The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The thug makes two melee attacks.",
+      "description | Mace | Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.",
+      "description | Heavy Crossbow | Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+    ],
+    "tags": []
+  }
+]

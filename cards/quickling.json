@@ -1,0 +1,31 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Quickling",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Tiny fey, chaotic evil",
+      "rule",
+      "property | Armor class | 16",
+      "property | Hit points | 10 (3d4 + 3)",
+      "property | Speed | 120 ft.",
+      "rule",
+      "dndstats | 4 | 23 | 13 | 10 | 12 | 7",
+      "rule",
+      "property | Skills | Acrobatics +8, Sleight of Hand +8, Stealth +8, Perception +S",
+      "property | Senses | darkvision 60 ft., passive Perception 15",
+      "property | Languages | Common, Sylvan",
+      "property | Challenge | 1 (200)",
+      "rule",
+      "description | Blurred Movement | Attack rolls against the quickling have disadvantage unless the quickling is incapacitated or restrained.",
+      "fill | 2",
+      "description | Evasion | If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The quickling makes three dagger attacks.",
+      "description | Dagger | Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (ld4 + 6) piercing damage."
+    ],
+    "tags": []
+  }
+]

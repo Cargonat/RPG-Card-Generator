@@ -1,0 +1,31 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Spy",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium humanoid (any race), any alignment",
+      "rule",
+      "property | Armor class | 12",
+      "property | Hit points | 27 (6d8)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 10 | 15 | 10 | 12 | 14 | 16",
+      "rule",
+      "property | Skills | Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of Hand +4, Stealth +4",
+      "property | Senses | , passive Perception 16",
+      "property | Languages | any two languages",
+      "property | Challenge | 1 (200)",
+      "rule",
+      "description | Cunning Action | On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.",
+      "description | Sneak Attack (1/Turn) | The spy deals an extra 7 (2d6) damage when it hit s a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy does n't have di sadvantage on the attack roll.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The spy makes two melee attacks.",
+      "description | Shortsword | Melee Weapon Attack: +4 to hit, reach 5 ft. , one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "description | Hand Crossbow | Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    ],
+    "tags": []
+  }
+]

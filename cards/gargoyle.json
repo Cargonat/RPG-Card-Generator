@@ -1,0 +1,33 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Gargoyle",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium elemental, chaotic evil",
+      "rule",
+      "property | Armor class | 15 (natural armor)",
+      "property | Hit points | 52 (7d8 + 21)",
+      "property | Speed | 30 ft., fly 60 ft.",
+      "rule",
+      "dndstats | 15 | 11 | 16 | 6 | 11 | 7",
+      "rule",
+      "property | Skills | ",
+      "property | Damage Resistances | bludgeoning, piercing, slashing",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | exhausted, petrified, poisoned",
+      "property | Senses | darkvision 60 ft., passive Perception 10",
+      "property | Languages | Terran",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | False Appearance | While the gargoyle remains motionless, it is indistinguashable from an inanimate statue.",
+      "fill | 2",
+      "section | Actions",
+      "description | Multiattack | The gargoyle makes two attacks: one with its bite and one with its claws.",
+      "description | Bite | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "description | Claws | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    ],
+    "tags": []
+  }
+]
