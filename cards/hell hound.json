@@ -1,0 +1,32 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Hell Hound",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium fiend, lawful evil",
+      "rule",
+      "property | Armor class | 15 (natural armor)",
+      "property | Hit points | 45 (7d8 + 14)",
+      "property | Speed | 50 ft.",
+      "rule",
+      "dndstats | 17 | 12 | 14 | 6 | 13 | 6",
+      "rule",
+      "property | Skills | Perception +5",
+      "property | Damage Immunities | fire",
+      "property | Senses | darkvision 60 ft., passive Perception 15",
+      "property | Languages | understands Infernal but can't speak it",
+      "property | Challenge | 3 (700)",
+      "rule",
+      "description | Keen Hearing and Smell | The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "fill | 2",
+      "description | Pack Tactics | The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "fill | 2",
+      "section | Actions",
+      "description | Bite | Melee Weapon Attack: +5 to hit, reach 5 ft ., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
+      "description | Fire Breath (Recharge 5-6) | The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one."
+    ],
+    "tags": []
+  }
+]
