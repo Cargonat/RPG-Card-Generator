@@ -41,7 +41,7 @@ public class RPGCardsMonsterUIMain
                     {
                         try
                         {
-                            File generateHTML = new File("rpg-cards.vigil/generator/generate.html");
+                            File generateHTML = new File("rpg-cards/generator/generate.html");
                             desktop.browse(generateHTML.toURI());
                             System.exit(1);
                         } catch (Exception e)
