@@ -74,7 +74,7 @@ public class CardCreationUI extends JFrame
     private JTextField languagesTextField;
     private JComboBox challengeRatingSpinner;
     private JTextField xpTextField;
-    private JTextArea traitsTextArea;
+    private JTextArea noncombatTraitsTextArea;
     private JTextArea actionsTextArea;
     private JTextArea reactionsTextArea;
     private JTextArea legendaryActionsTextArea;
@@ -112,6 +112,10 @@ public class CardCreationUI extends JFrame
     private JTextField armorClassTextField;
     private JCheckBox hoverCheckBox;
     private JTextField alignmentTextField;
+    private JTextArea bonusActionsTextArea;
+    private JTextArea lairActionsTextArea;
+    private JTextArea regionalEffectsTextArea;
+    private JTextArea combatTraitsTextArea;
 
     //Constructor
     CardCreationUI()
@@ -446,71 +450,74 @@ public class CardCreationUI extends JFrame
         json += "\"property | Challenge | " + challengeRatingSpinner.getSelectedItem() + " ("
                 + xpTextField.getText() + ")\",\n      \"rule\",\n      ";
 
-        //Traits
-        if (!traitsTextArea.getText().isEmpty())
+        //Non-Combat Traits
+        if (!noncombatTraitsTextArea.getText().isEmpty())
         {
-            String traitLines[] = traitsTextArea.getText().split("\\r?\\n");
+            String lines[] = noncombatTraitsTextArea.getText().split("\\r?\\n");
             //noinspection Duplicates
-            for (String traitString : traitLines)
-                if (traitString.length() != 0)
-                {
-                    int splitPos = traitString.indexOf(".");
-                    traitString = traitString.substring(0,splitPos) + " |" + traitString.substring(splitPos + 1, traitString.length());
-                    json += "\"description | " + traitString + "\",\n      \"fill | 2\",\n      ";
-                }
+            json += processLines(lines);
+        }
+        json += "      \"fill | 2\",\n      ";
+
+        //Combat Traits
+        if (!combatTraitsTextArea.getText().isEmpty())
+        {
+            String lines[] = combatTraitsTextArea.getText().split("\\r?\\n");
+            json += processLines(lines);
         }
 
         //Actions
         if (!actionsTextArea.getText().isEmpty())
         {
             json += "\"section | Actions\",\n      ";
-            String actionLines[] = actionsTextArea.getText().split("\\r?\\n");
+            String lines[] = actionsTextArea.getText().split("\\r?\\n");
             //noinspection Duplicates
-            for (String actionString : actionLines)
-                if (!actionString.isEmpty())
-                {
-                    int splitPos = actionString.indexOf(".");
-                    actionString = actionString.substring(0, splitPos)
-                                   + " |"
-                                   + actionString.substring(splitPos + 1, actionString.length());
-                    json += "\"description | " + actionString + "\",\n      ";
-                }
+            json += processLines(lines);
+        }
+
+        //Bonus Actions
+        if (!bonusActionsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Bonus Actions\",\n      ";
+            String lines[] = bonusActionsTextArea.getText().split("\\r?\\n");
+            //noinspection Duplicates
+            json += processLines(lines);
         }
 
         //Reactions
         if (!reactionsTextArea.getText().isEmpty())
         {
             json += "\"section | Reactions\",\n      ";
-            String reactionLines[] = reactionsTextArea.getText().split("\\r?\\n");
+            String lines[] = reactionsTextArea.getText().split("\\r?\\n");
             //noinspection Duplicates
-            for (String reactionString : reactionLines)
-            {
-                if (!reactionString.isEmpty())
-                {
-                    int splitPos = reactionString.indexOf(".");
-                    reactionString = reactionString.substring(0, splitPos) + " |" + reactionString
-                            .substring(splitPos + 1, reactionString.length());
-                    json += "\"description | " + reactionString + "\",\n      ";
-                }
-            }
+            json += processLines(lines);
         }
 
         //Legendary Actions
         if (!legendaryActionsTextArea.getText().isEmpty())
         {
             json += "\"section | Legendary Actions\",\n      ";
-            String legendaryActionLines[] = legendaryActionsTextArea.getText().split("\\r?\\n");
+            String lines[] = legendaryActionsTextArea.getText().split("\\r?\\n");
             //noinspection Duplicates
-            for (String legendaryActionString : legendaryActionLines)
-            {
-                if (!legendaryActionString.isEmpty())
-                {
-                    int splitPos = legendaryActionString.indexOf(".");
-                    legendaryActionString = legendaryActionString.substring(0, splitPos) + " |" + legendaryActionString
-                            .substring(splitPos + 1, legendaryActionString.length());
-                    json += "\"description | " + legendaryActionString + "\",\n      ";
-                }
-            }
+            json += processLines(lines);
+        }
+
+        //Lair Actions
+        if (!lairActionsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Lair Actions\",\n      ";
+            String lines[] = lairActionsTextArea.getText().split("\\r?\\n");
+            //noinspection Duplicates
+            json += processLines(lines);
+        }
+
+        //Regional Effects
+        if (!regionalEffectsTextArea.getText().isEmpty())
+        {
+            json += "\"section | Regional Effects\",\n      ";
+            String lines[] = regionalEffectsTextArea.getText().split("\\r?\\n");
+            //noinspection Duplicates
+            json += processLines(lines);
         }
 
         //cutting last comma
@@ -519,5 +526,49 @@ public class CardCreationUI extends JFrame
         //Close and return
         json += "    ],\n    \"tags\": []\n  }\n]";
         return json;
+    }
+
+    private String processLines(String[] lines)
+    {
+        String out = "";
+        for (String line : lines)
+            if (!line.isEmpty())
+            {
+                switch (line.substring(0,1)){
+                    case ". ":
+                        line = line.substring(2);
+                        out += "\"description | |" + line + "\",\n      ";
+                        break;
+                    case ".":
+                        line = line.substring(1);
+                        out += "\"description | |" + line + "\",\n      ";
+                        break;
+                    case "• ":
+                        line = line.substring(2);
+                        out += "\"description | • |" + line + "\",\n      ";
+                        break;
+                    case "•":
+                        line = line.substring(1);
+                        out += "\"description | • |" + line + "\",\n      ";
+                        break;
+                    default:
+                        if(line.contains(".") && line.indexOf(".") != line.length()-1){
+                            int splitPos = line.indexOf(".")+1;
+                            line = line.substring(0, splitPos)
+                                   + " |"
+                                   + line.substring(splitPos);
+                            out += "\"description | " + line + "\",\n      ";
+                        }
+                        else{
+                            out += "\"description | |" + line + "\",\n      ";
+                        }
+                }
+            }
+        return out;
+    }
+
+    private void createUIComponents()
+    {
+        // place custom component creation code here
     }
 }
