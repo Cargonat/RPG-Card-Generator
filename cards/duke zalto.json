@@ -1,0 +1,41 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Duke Zalto",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Huge fire giant, lawful evil",
+      "rule",
+      "property | Armor class | 18 (plate)",
+      "property | Hit points | 221 (13d12 + 78)",
+      "property | Speed | 30 ft.",
+      "rule",
+      "dndstats | 25 | 9 | 23 | 14 | 14 | 13",
+      "rule",
+      "property | Saving Throws | Dex +3, Con +10, Cha +5",
+      "property | Skills | Athletics +11, Perception +6",
+      "property | Damage Resistances | lightning",
+      "property | Damage Immunities | fire",
+      "property | Senses | , passive Perception 16",
+      "property | Languages | Common, Giant, Elvish",
+      "property | Challenge | 16 (15,000)",
+      "rule",
+      "description | Ring of Lightning Resistance | Duke Zalto has resistance to lightning damage.",
+      "description | Siege Monster | Duke Zalto deals double damage to objects and structures.",
+      "fill | 2",
+      "description | Legendary Resistance (1/Day) | When Duke Zalto fails a saving throw, he can choose to succeed instead.",
+      "description | Tackle | When Duke Zalto enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone.",
+      "section | Actions",
+      "description | Multiattack | Duke Zalto makes two maul attacks .",
+      "description | Giant Iron Maul | Melee Weapon Attack: +11 to hit, reach 10ft., one target. Hit: 28 (6d6 + 7) bludgeoning damage.",
+      "description | Rock | Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
+      "section | Legendary Actions",
+      "description | | Duke Zalto can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and nly at the end of another creature's turn. Duke Zalto regains spent legendary actions at the start of his turn.",
+      "description | Detect | Duke Zalto makes a Wisdom (Perception) check.",
+      "description | Maul Attack | Duke Zalto makes a maul attack.",
+      "description | Command Ally | Duke Zalto targets an ally he can see within 30 feet of him. If the target can see and hear the duke, it can make one weapon attack as a reaction and gains advantage on the attack roll.",
+    ],
+    "tags": []
+  }
+]
