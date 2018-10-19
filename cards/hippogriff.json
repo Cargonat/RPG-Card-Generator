@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Hippogriff",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large monstrosity, unaligned",
+      "rule",
+      "property | Armor class | 11",
+      "property | Hit points | 19 (3d10 + 3)",
+      "property | Speed | 40 ft., fly 60 ft.",
+      "rule",
+      "dndstats | 17 | 13 | 13 | 2 | 12 | 8",
+      "rule",
+      "property | Skills | Perception +5",
+      "property | Senses | , passive Perception 15",
+      "property | Languages | -",
+      "property | Challenge | 1 (200)",
+      "rule",
+      "description | Keen Sight. | The hippogriff has advantage on Wisdom (Perception) checks that rely on sight.",
+            "fill | 2",
+      "section | Actions",
+      "description | Multiattack. | The hippogriff makes two attacks: one with its beak and one with its claws.",
+      "description | Beak. | Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
+      "description | Claws. | Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    ],
+    "tags": []
+  }
+]

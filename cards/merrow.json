@@ -1,0 +1,30 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Merrow",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large monstrosity, chaotic evil",
+      "rule",
+      "property | Armor class | 13 (natural armor)",
+      "property | Hit points | 45 (6d10 + 12)",
+      "property | Speed | 10 ft., swim 40 ft.",
+      "rule",
+      "dndstats | 18 | 10 | 15 | 8 | 10 | 9",
+      "rule",
+      "property | Senses | darkvision 60 ft., passive Perception 10",
+      "property | Languages | Abyssal, Aquan",
+      "property | Challenge | 2 (450)",
+      "rule",
+      "description | Amphibious. | The merrow can breathe air and water.",
+            "fill | 2",
+      "section | Actions",
+      "description | Multiattack. | The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
+      "description | Bite. | Melee Weapon Attack: +6 to hit, reach 5 ft ., one target. Hit: 8 (1d8 + 4) piercing damage.",
+      "description | Claws. | Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.",
+      "description | Harpoon. | Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow."
+    ],
+    "tags": []
+  }
+]
