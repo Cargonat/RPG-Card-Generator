@@ -33,7 +33,7 @@ public class RPGCardsMonsterUIMain
         _menuUI.getOpenRPGCardsInButton().addActionListener(
                 ae ->
                 {
-                    StringSelection selection = new StringSelection(new File("").getAbsolutePath());
+                    StringSelection selection = new StringSelection(new File("cards").getAbsolutePath());
                     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
                     _menuUI.setVisible(false);
                     Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
