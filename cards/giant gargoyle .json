@@ -1,0 +1,32 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Giant Gargoyle ",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Large elemental, chaotic evil",
+      "rule",
+      "property | Armor class | 17 (natural armor)",
+      "property | Hit points | 104 (11d10 + 44)",
+      "property | Speed | 30 ft., fly 60 ft.",
+      "rule",
+      "dndstats | 17 | 9 | 19 | 6 | 12 | 8",
+      "rule",
+      "property | Damage Resistances | bludgeoning, piercing, slashing",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | exhausted, petrified, poisoned",
+      "property | Senses | darkvision 120 ft., passive Perception 10",
+      "property | Languages | Terran",
+      "property | Challenge | 5 (1800)",
+      "rule",
+      "description | False Appearance. | While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.",
+            "fill | 2",
+      "section | Actions",
+      "description | Multiattack. | The gargoyle makes two attacks: one with its bite and one with its claws.",
+      "description | Bite. | Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+      "description | Claws. | Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    ],
+    "tags": []
+  }
+]

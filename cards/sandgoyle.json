@@ -1,0 +1,33 @@
+[
+  {
+    "count": 1,
+    "color": "Maroon",
+    "title": "Sandgoyle",
+    "icon": "imp-laugh",
+    "contents": [
+      "subtitle | Medium elemental, chaotic evil",
+      "rule",
+      "property | Armor class | 15 (Natural Armor)",
+      "property | Hit points | 52 (7d8 + 21)",
+      "property | Speed | 30 ft., fly 60 ft.",
+      "rule",
+      "dndstats | 15 | 11 | 16 | 6 | 11 | 17",
+      "rule",
+      "property | Damage Resistances | bludgeoning, piercing, slashing",
+      "property | Damage Immunities | poison",
+      "property | Condition Immunities | exhausted, petrified, poisoned",
+      "property | Senses | , passive Perception 10",
+      "property | Languages | Terran",
+      "property | Challenge | 3 (700)",
+      "rule",
+      "description | False Appearance. | While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.",
+            "fill | 2",
+      "section | Actions",
+      "description | Multiattack. | The gargoyle makes two attacks: one with its bite and one with its claws.",
+      "description | Bite. | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "description | Claws. | Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+      "description | Flaming Sands. | Ranged Spell Attack: +5 to hit, reach 60 ft., one target. Hit:   (4d10 +3) fire damage."
+    ],
+    "tags": []
+  }
+]
